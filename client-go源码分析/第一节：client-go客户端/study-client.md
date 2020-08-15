@@ -22,7 +22,7 @@ kuberbetes系统使用client-go作为go语言的官方编程式交互客户端�
 
 2）Client客户端
 ----
-![](https://github.com/wmy-one/k8sStudy.gihub.io/blob/master/client-go%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/%E7%AC%AC%E4%B8%80%E8%8A%82%EF%BC%9Aclient-go%E5%AE%A2%E6%88%B7%E7%AB%AF/client%E4%BA%A4%E4%BA%92%E5%AF%B9%E8%B1%A1.png)
+![](https://github.com/wmy-one/k8sStudy.gihub.io/blob/master/client-go%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/%E7%AC%AC%E4%B8%80%E8%8A%82%EF%BC%9Aclient-go%E5%AE%A2%E6%88%B7%E7%AB%AF/img/client%E4%BA%A4%E4%BA%92%E5%AF%B9%E8%B1%A1.png)
 
 client-go提供了4种客户端，简单描述如下：
 |客户端名称|源码目录|简单描述|
