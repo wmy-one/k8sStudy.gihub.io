@@ -54,3 +54,18 @@ contexts:  // 定义k8s集群用户信息和命名空间等，用于将请求发
 -  context:
    name: dev-context
 ```
+client-go会读取kubeconfig配置信息并生成config对象，用于和kube-apiserver通信，示例代码如下：
+```
+package main
+
+import (
+    "k8s.io/client-go/tools/clientcmd"
+)
+
+func main() {
+    config, err := clientcmd.BuildConfigFromFlags("", "/root/.kube/config")
+    if err != nil {
+        panic(err)
+    }
+}
+```
