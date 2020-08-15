@@ -27,10 +27,10 @@ client-go提供了4种客户端，简单描述如下：
 |客户端名称|源码目录|简单描述|
 |---------|--------|--------|
 |RESTClient|client-go/rest/|基础客户端，对HTTP Request进行了封装，实现了RESTful风格的API；其他三种客户端都是基于它实现的|
-|ClientSet|client-go/kubernetes/|在RESTClient的基础上封装了对Resource和Version的管理方法，每个Resource和Version都以函数的方式暴露给开发者，只能处理k8s内置资源，
-是由client-gen代码生产器自动生成；另外，我们使用ClientSet的话是必须要知道Resource和Version， 例如AppsV1().Deployments或者CoreV1.Pods，缺点是不能访问CRD自定义资源|
+|ClientSet|client-go/kubernetes/|在RESTClient的基础上封装了对Resource和Version的管理方法，每个Resource和Version都以函数的方式暴露给开发者，只能处理k8s内置资源，是由client-gen代码生产器自动生成；另外，我们使用ClientSet的话是必须要知道Resource和Version， 例如AppsV1().Deployments或者CoreV1.Pods，缺点是不能访问CRD自定义资源|
 |DynamicClient|client-go/dynamic/|包含一组动态的客户端，可以对任意的K8S API对象执行通用操作，包括CRD自定义资源|
 |DiscoveryClient|client-go/discovery/|提供一个发现客户端，用于发现kube-apiserver所支持的资源组（Group）、资源版本(Version）和资源信息（Resources）|
+
 以上4种客户端都可通过kubeconfig配置信息连接到指定的k8s API server。
 
 3）kubeconfig配置管理
